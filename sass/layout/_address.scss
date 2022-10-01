@@ -1,0 +1,118 @@
+.address-logo {
+  text-decoration: none;
+}
+
+.contact-links,
+.mail-links,
+.phone-links {
+  text-decoration: none;
+}
+
+.address-list {
+  list-style: none;
+}
+
+.address-item {
+  color: var(--title-text-color);
+}
+
+.contact-links {
+  color: var(--title-text-color);
+}
+
+.address {
+  background-color:var(--hero-address-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address-menu {
+  display: flex;
+  align-items: baseline;
+}
+
+.address-contact {
+  @include font (14px, 400, 24px);
+  font-family: var(--primary-font);
+  font-style: normal;
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+  color: var(--title-text-color);
+}
+
+.address-container {
+  margin-right: 70px;
+}
+
+.address-mail,
+.address-phone {
+  @include font (14px, 400, 24px);
+  font-family: var(--primary-font);
+  font-style: normal;
+  letter-spacing: 0.03em;
+  margin-top: 9px;
+  color: var(--mail-links-color);
+}
+
+.mail-links,
+.phone-links {
+  color: var(--mail-links-color);
+  transition: var(--transition-dur-and-func);
+
+&:hover,
+&:focus {
+  color: #188CE8;
+ }
+}
+
+.address-icon {
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.address-link {
+  @include font (14px, 16px);
+  font-family: var(--primary-font);
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.address-social-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.address-social-list-link {
+ @extend %align;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--address-list-color);
+  transition: background-color var(--transition-dur-and-func);
+
+ &:hover,
+ &:focus {
+  background-color: var(--address-color);
+ }
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-list-color);
+  transition: fill var(--transition-dur-and-func);
+
+.address-social-list-link:hover &,
+.address-social-list-link:focus & {
+  fill: var(--title-text-color);
+ }
+}
+  
+.address-social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--title-text-color);
+  transition: var(--transition-dur-and-func);
+ }

@@ -1,0 +1,32 @@
+.section-list-container {
+  list-style: none;
+}
+
+.section-work.section {
+    padding-bottom: 94px;
+    margin-top: auto;
+  }
+  
+  .list__applications-list {
+    position: relative;
+  }
+  
+  .image__section {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .text-applications__text {
+    @include font (14px, 700, 16px);
+    @extend %align;
+    position: absolute;
+    font-family: var(--primary-font);
+    letter-spacing: 0.03em;
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--applications-color);
+    color: var(--title-text-color);
+  }

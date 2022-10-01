@@ -1,0 +1,23 @@
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+@import './base/common';
+@import './base/container';
+
+@import './components/mobile-menu';
+@import './components/hero-section';
+@import './components/section-title';
+@import './components/section-work';
+@import './components/post-section'; 
+@import './components/social-list';
+@import './components/clients';
+@import './components/backdrop';
+@import './components/modal-form';
+@import './components/work';
+@import './components/work-list';
+@import './components/work-item';
+
+@import './layout/header';
+@import './layout/address';
+@import './layout/form';

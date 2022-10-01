@@ -1,0 +1,62 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--backdrop-color);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 250ms ease, visibility 250ms ease;
+  }
+  
+  .backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+    background-color: var(--title-text-color);
+  }
+  
+  .modal-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    @extend %align;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--modal-border-color);
+    padding: 0;
+    border-color: rgba(0, 0, 0, 0.1);
+    transition: border-color var(--transition-dur-and-func);
+  
+  
+    &:focus {
+    outline: none;
+    fill: var(--address-color);
+    border-color: var(--modal-close-color);
+  }
+  
+    &:focus {
+    outline: none;
+    color: var(--secondary-title-color);
+    transition: color var(--transition-dur-and-func);
+  }
+  
+    &:focus {
+    fill: var(--address-color);
+    }
+  }

@@ -1,0 +1,95 @@
+@mixin font($fs: 44px, $fw: 900, $lh: 60px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 16px, $fw: 700, $lh: 30px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 20px, $fw: 700, $lh: 23px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 12px, $fw: 400, $lh: 14px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 14px, $fw: 400, $lh: 24px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 16px, $fw: 700, $lh: 30px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 36px, $fw: 700, $lh: 42px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 16px, $fw: 500, $lh: 19px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 16px, $fw: 400, $lh: 19px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 14px, $fw: 700, $lh: 16px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 14px, $fw: 400, $lh: 24px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 26px, $fw: 700, $lh: 31px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 14px, $fw: 500, $lh: 16px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 18px, $fw: 400, $lh: 28px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 18px, $fw: 700, $lh: 36px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 16px, $fw: 400, $lh: 30px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}

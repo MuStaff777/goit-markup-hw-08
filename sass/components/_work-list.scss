@@ -1,0 +1,27 @@
+.work__list {
+    list-style: none;
+}
+
+.buttonhover {
+    @include font (16px, 500, 26px);
+    font-family: var(--primary-font);
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--button-list-color);
+    color: var(--text-color);
+    transition: var(--transition-dur-and-func);
+  
+&:hover,
+&:focus {
+    background-color: var(--address-color);
+    color: var(--title-text-color);
+  }
+}
+  
+  .work__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+  }
