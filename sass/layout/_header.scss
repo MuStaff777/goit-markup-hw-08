@@ -81,7 +81,8 @@
 }
     
     
-.page-list {
+.page-list,
+.address-item {
   @include font (24px, 700, 28px);
     font-family: var(--secondary-font);
     letter-spacing: 0.03em;

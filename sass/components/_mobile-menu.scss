@@ -1,6 +1,7 @@
 @media screen and (max-width: 767px) {
 .mobile-menu-contacts,
-.mobile-menu-links {
+.mobile-menu-links,
+.mobile-menu__list {
   list-style: none;
 }
 
@@ -19,10 +20,6 @@
     flex-direction: column;
     align-items: baseline;
     gap: 32px;
-}
-
-.mobile-menu__item {
-    padding-top: 32px;
 }
 
 .mobile-menu-contacts {
@@ -54,7 +51,7 @@
   }
 }  
 
-.mobile-menu__close-icon {
+.mobile-close-icon {
     width: 40px;
     height: 40px;
 }
