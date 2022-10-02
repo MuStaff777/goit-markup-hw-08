@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
 .hero.section {
-    width: 767px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -15,7 +15,7 @@
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
 .section-overlay {
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hero/hero-mob.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/link/tadam.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,7 +57,7 @@
 
 @media screen and (min-width: 768px) {
   .hero.section {
-    width: 767px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -69,10 +69,12 @@
   }
 
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), 
+screen and (min-width: 768px) and (min-resolution: 192dpi), 
+screen and (min-width: 768px) and (min-resolution: 2dppx) {
 .section-overlay {
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hero/hero-mob.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/link/tadam/img.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -114,7 +116,7 @@
 
 @media screen and (min-width: 1200px) {
   .hero.section {
-    width: 1200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -126,7 +128,9 @@
   }
 
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), 
+screen and (min-width: 1200px) and (min-resolution: 192dpi), 
+screen and (min-width: 1200px) and (min-resolution: 2dppx) {
 .section-overlay {
     height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hero/hero-mob.jpg);

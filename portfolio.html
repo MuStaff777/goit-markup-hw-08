@@ -13,7 +13,7 @@
 </head>
 <body>
     <header class="page-header">
-        <div class="container page-header-container">
+        <div class="container page-header__container">
         <nav class="page-navigation">
             <a class="logo page-navigation__logo" href="./portfolio.html">
                 <span class="page-logo">Web</span>
@@ -39,7 +39,52 @@
                 </svg>+38 096 111 11 11</a>
             </li> 
         </ul>
+         <button type="button" class="menu-button js-open-menu">
+            <svg width="40" height="40" aria-label="Мобільне меню">
+                <use class="menu-button__icon" href="./images/link/sprite.svg#icon-burger"></use>
+            </svg>
+        </button>
         </div>
+    </header>
+
+    <div class="mobile-menu-container js-menu-container">
+        <div class="container mobile-container">
+            <button class="mobile-menu-button js-close-menu">
+                 <svg aria-label="Закрите вікно" class="mobile-close-icon" width="40" heigh="40">
+                    <use href="./images/link/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu list">
+                <li class="mobile-menu__item"><a class="mobile-menu__link link" href="studio">Студія</a></li>
+                <li class="mobile-menu__item"><a class="mobile-menu__link item current" href="./portfolio.html">Портфоліо</a></li>
+                <li class="mobile-menu__item"><a class="mobile-menu__link link" href="contacts">Контакти</a></li>
+            </ul>
+            <div>
+            <ul class="mobile-menu-contacts">
+                 <li class="mobile-container__list">
+                    <a class="mobile-contact-phone-number link" href="+380961111111">+38 096 111 11 11</a>
+                </li> 
+                <li class="container__list">
+                    <a class="mobile-menu-site link" href="info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile-menu-links">
+                <li class="mobile-menu-links__item">
+                    <a class="mobile-social-link" href="#">Instagram</a>
+                </li>    
+                <li class="mobile-menu-links__item">
+                    <a class="mobile-social-link" href="#">Twitter</a>
+                </li>
+                <li class="mobile-menu-links__item">
+                    <a class="mobile-social-link" href="#">Facebook</a>
+                </li>
+                <li class="mobile-menu-links__item">
+                    <a class="mobile-social-link" href="#">LinkedIn</a>
+                </li> 
+            </ul>
+            </div>
+        </div>
+    </div>
     </header>
 
     <main>
@@ -57,7 +102,12 @@
                     <li class="work__item-container">
                         <a class="work__container" href="">
                             <div class="team__list-img-wrapper">
+                               <picture>
+                                <source srcet="./images/N8/decstop/portfolio-1.jpg 1x, ./images/N8/decstop/portfolio-1.jpg 2x" media="(min-width: 1200px)">
+                                <source srcet="./images/N8/tablet/portfolio-target-1.jpg 1x, ./images/N8/tablet/portfolio-target-1.jpg 2x" media="(min-width: 768px)">
+                                <source srcet="./images/N8/mobile/portfolio-mobile-1.jpg 1x, ./images/N8/mobile/portfolio-mobile-1.jpg 2x" media="(max-width: 767px)">
                                 <img class="user__item" src="./images/portfolio/img-1.jpg" alt="Технокряк" width="370">
+                                </picture> 
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div> 
                         <div class="container__work">
@@ -69,7 +119,12 @@
                     <li class="work__item-container">
                         <a class="work__container" href="">
                             <div class="team__list-img-wrapper">
+                                <picture>
+                                <source srcet="./images/N8/decstop/portfolio-2.jpg 1x, ./images/N8/decstop/portfolio-2.jpg 2x" media="(min-width: 1200px)">
+                                <source srcet="./images/N8/tablet/portfolio-target-2.jpg 1x, ./images/N8/tablet/portfolio-target-2.jpg 2x" media="(min-width: 768px)">
+                                <source srcet="./images/N8/mobile/portfolio-mobile-2.jpg 1x, ./images/N8/mobile/portfolio-mobile-2.jpg 2x" media="(max-width: 767px)">
                                 <img class="user__item" src="./images/portfolio/img-2.jpg" alt="Технокряк" width="370">
+                                </picture>
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div> 
                         <div class="container__work" >
@@ -81,7 +136,12 @@
                     <li class="work__item-container">
                         <a class="work__container" href="">
                             <div class="team__list-img-wrapper">
+                                <picture>
+                                <source srcet="./images/N8/decstop/portfolio-3.jpg 1x, ./images/N8/decstop/portfolio-3.jpg 2x" media="(min-width: 1200px)">
+                                <source srcet="./images/N8/tablet/portfolio-target-portfolio-3.jpg 1x, ./images/N8/tablet/portfolio-target-3.jpg 2x" media="(min-width: 768px)">
+                                <source srcet="./images/N8/mobile/portfolio-mobile-portfolio-3.jpg 1x, ./images/N8/mobile/portfolio-mobile-3.jpg 2x" media="(max-width: 767px)">
                                 <img class="user__item" src="./images/portfolio/img-3.jpg" alt="Технокряк" width="370">
+                                </picture>
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div> 
                         <div class="container__work" >
@@ -93,7 +153,12 @@
                     <li class="work__item-container">
                         <a class="work__container" href="">
                             <div class="team__list-img-wrapper">
+                               <picture>
+                                <source srcet="./images/N8/decstop/portfolio-4.jpg 1x, ./images/N8/decstop/portfolio-4.jpg 2x" media="(min-width: 1200px)">
+                                <source srcet="./images/N8/tablet/portfolio-target-portfolio-4.jpg 1x, ./images/N8/tablet/portfolio-target-4.jpg 2x" media="(min-width: 768px)">
+                                <source srcet="./images/N8/mobile/portfolio-mobile-portfolio-4.jpg 1x, ./images/N8/mobile/portfolio-mobile-4.jpg 2x" media="(max-width: 767px)">
                                 <img class="user__item" src="./images/portfolio/img-4.jpg" alt="Технокряк" width="370">
+                               </picture>
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div> 
                         <div class="container__work" >
@@ -105,7 +170,12 @@
                     <li class="work__item-container">
                         <a class="work__container" href="">
                             <div class="team__list-img-wrapper">
+                               <picture>
+                                <source srcet="./images/N8/decstop/portfolio-5.jpg 1x, ./images/N8/decstop/portfolio-5.jpg 2x" media="(min-width: 1200px)">
+                                <source srcet="./images/N8/tablet/portfolio-target-portfolio-5.jpg 1x, ./images/N8/tablet/portfolio-target-5.jpg 2x" media="(min-width: 768px)">
+                                <source srcet="./images/N8/mobile/portfolio-mobile-portfolio-5.jpg 1x, ./images/N8/mobile/portfolio-mobile-5.jpg 2x" media="(max-width: 767px)">
                                 <img class="user__item" src="./images/portfolio/img-5.jpg" alt="Технокряк" width="370">
+                               </picture>
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div> 
                         <div class="container__work" >
@@ -117,7 +187,12 @@
                     <li class="work__item-container">
                         <a class="work__container" href="">
                             <div class="team__list-img-wrapper">
+                               <picture>
+                                <source srcet="./images/N8/decstop/portfolio-6.jpg 1x, ./images/N8/decstop/portfolio-6.jpg 2x" media="(min-width: 1200px)">
+                                <source srcet="./images/N8/tablet/portfolio-target-portfolio-6.jpg 1x, ./images/N8/tablet/portfolio-target-6.jpg 2x" media="(min-width: 768px)">
+                                <source srcet="./images/N8/mobile/portfolio-mobile-portfolio-6.jpg 1x, ./images/N8/mobile/portfolio-mobile-6.jpg 2x" media="(max-width: 767px)">
                                 <img class="user__item" src="./images/portfolio/img-6.jpg" alt="Технокряк" width="370">
+                               </picture>
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div> 
                         <div class="container__work" >
@@ -129,7 +204,12 @@
                     <li class="work__item-container">
                         <a class="work__container" href="">
                             <div class="team__list-img-wrapper">
+                               <picture>
+                                <source srcet="./images/N8/decstop/portfolio-7.jpg 1x, ./images/N8/decstop/portfolio-7.jpg 2x" media="(min-width: 1200px)">
+                                <source srcet="./images/N8/tablet/portfolio-target-portfolio-7.jpg 1x, ./images/N8/tablet/portfolio-target-7.jpg 2x" media="(min-width: 768px)">
+                                <source srcet="./images/N8/mobile/portfolio-mobile-portfolio-7.jpg 1x, ./images/N8/mobile/portfolio-mobile-7.jpg 2x" media="(max-width: 767px)">
                                 <img class="user__item" src="./images/portfolio/img-7.jpg" alt="Технокряк" width="370">
+                               </picture>
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div> 
                         <div class="container__work" >
@@ -141,7 +221,12 @@
                     <li class="work__item-container">
                         <a class="work__container" href="">
                             <div class="team__list-img-wrapper">
+                               <picture>
+                                <source srcet="./images/N8/decstop/portfolio-8.jpg 1x, ./images/N8/decstop/portfolio-8.jpg 2x" media="(min-width: 1200px)">
+                                <source srcet="./images/N8/tablet/portfolio-target-portfolio-8.jpg 1x, ./images/N8/tablet/portfolio-target-8.jpg 2x" media="(min-width: 768px)">
+                                <source srcet="./images/N8/mobile/portfolio-mobile-portfolio-8.jpg 1x, ./images/N8/mobile/portfolio-mobile-8.jpg 2x" media="(max-width: 767px)">
                                 <img class="user__item" src="./images/portfolio/img-8.jpg" alt="Технокряк" width="370">
+                               </picture>
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div> 
                         <div class="container__work" >
@@ -153,7 +238,12 @@
                     <li class="work__item-container">
                         <a class="work__container" href="">
                             <div class="team__list-img-wrapper">
+                               <picture>
+                                <source srcet="./images/N8/decstop/portfolio-9.jpg 1x, ./images/N8/decstop/portfolio-9.jpg 2x" media="(min-width: 1200px)">
+                                <source srcet="./images/N8/tablet/portfolio-target-portfolio-9.jpg 1x, ./images/N8/tablet/portfolio-target-9.jpg 2x" media="(min-width: 768px)">
+                                <source srcet="./images/N8/mobile/portfolio-mobile-portfolio-9.jpg 1x, ./images/N8/mobile/portfolio-mobile-9.jpg 2x" media="(max-width: 767px)">
                                 <img class="user__item" src="./images/portfolio/img-9.jpg" alt="Технокряк" width="370">
+                               </picture>
                                 <p class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div> 
                         <div class="container__work" >
@@ -237,5 +327,7 @@
         </form> 
     </div>
     </footer>
+
+     <script src="./js/menu.js"></script>
 </body>
 </html>
