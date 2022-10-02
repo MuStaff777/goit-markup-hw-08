@@ -30,54 +30,6 @@
   --transition-dur-and-func: 250ms linear;
 }
 
-.address-social-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.address-social-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.address-social-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.address-social-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.address-social-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.address-social-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.address-social-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.address-social-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 h1,
 h2,
 h3,
@@ -351,7 +303,8 @@ body {
     letter-spacing: 0.03em;
     color: var(--secondary-title-color);
   }
-  .page-header {
+  .page-header__container {
+    display: flex;
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid var(--border-color);
@@ -359,13 +312,16 @@ body {
   .page-navigation {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   .menu {
     display: flex;
     column-gap: 50px;
+    margin-left: 50px;
   }
   .page-navigation__logo {
-    margin-right: 88px;
+    display: flex;
+    align-items: center;
   }
   .menu__link.link {
     font-size: 14px;
@@ -484,7 +440,6 @@ body {
   .page-header {
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid var(--border-color);
   }
   .page-navigation__logo {
     margin-right: 93px;
@@ -656,7 +611,13 @@ body {
   color: var(--address-color);
   }
 }*/
-.address-logo {
+.address {
+  background-color: var(--hero-address-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/*.address-logo {
   text-decoration: none;
 }
 
@@ -679,7 +640,7 @@ body {
 }
 
 .address {
-  background-color: var(--hero-address-color);
+  background-color:var(--hero-address-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -690,9 +651,7 @@ body {
 }
 
 .address-contact {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.7142857143;
+  @include font (14px, 400, 24px);
   font-family: var(--primary-font);
   font-style: normal;
   letter-spacing: 0.03em;
@@ -706,9 +665,7 @@ body {
 
 .address-mail,
 .address-phone {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.7142857143;
+  @include font (14px, 400, 24px);
   font-family: var(--primary-font);
   font-style: normal;
   letter-spacing: 0.03em;
@@ -720,11 +677,11 @@ body {
 .phone-links {
   color: var(--mail-links-color);
   transition: var(--transition-dur-and-func);
-}
-.mail-links:hover, .mail-links:focus,
-.phone-links:hover,
-.phone-links:focus {
+
+&:hover,
+&:focus {
   color: #188CE8;
+ }
 }
 
 .address-icon {
@@ -734,9 +691,7 @@ body {
 }
 
 .address-link {
-  font-size: 14px;
-  font-weight: 16px;
-  line-height: 2.1428571429;
+  @include font (14px, 16px);
   font-family: var(--primary-font);
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -749,14 +704,17 @@ body {
 }
 
 .address-social-list-link {
+ @extend %align;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: var(--address-list-color);
   transition: background-color var(--transition-dur-and-func);
-}
-.address-social-list-link:hover, .address-social-list-link:focus {
+
+ &:hover,
+ &:focus {
   background-color: var(--address-color);
+ }
 }
 
 .social-list-icon {
@@ -764,9 +722,11 @@ body {
   height: 20px;
   fill: var(--social-list-color);
   transition: fill var(--transition-dur-and-func);
-}
-.address-social-list-link:hover .social-list-icon, .address-social-list-link:focus .social-list-icon {
+
+.address-social-list-link:hover &,
+.address-social-list-link:focus & {
   fill: var(--title-text-color);
+ }
 }
 
 .address-social-list-icon {
@@ -774,8 +734,7 @@ body {
   height: 20px;
   fill: var(--title-text-color);
   transition: var(--transition-dur-and-func);
-}
-
+ }*/
 .form {
   margin-left: auto;
 }

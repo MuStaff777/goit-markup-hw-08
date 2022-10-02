@@ -92,7 +92,8 @@
     color: var(--secondary-title-color);
 }
         
-.page-header {
+.page-header__container {
+    display: flex;
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid var(--border-color);
@@ -101,15 +102,18 @@
 .page-navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-    
+
 .menu {
   display: flex;
   column-gap: 50px;
+  margin-left: 50px;
 }
     
 .page-navigation__logo {
-  margin-right: 88px;
+  display: flex;
+  align-items: center;
 }
     
 .menu__link.link {
@@ -240,7 +244,6 @@
   .page-header {
     padding-top: 24px;
     padding-bottom: 25px;
-    border-bottom: 1px solid var(--border-color);
   }
 
 .page-navigation__logo {

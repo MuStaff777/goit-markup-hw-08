@@ -93,3 +93,35 @@
     font-weight: $fw;
     line-height: $lh / $fs;
 }
+
+@mixin font($fs: 40px, $fw: 500, $lh: 47px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 24px, $fw: 500, $lh: 47px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 34px, $fw: 500, $lh: 40px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+
+@mixin font($fs: 26px, $fw: 900, $lh: 42px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+@mixin font($fs: 16px, $fw: 700, $lh: 30px) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: calc($lh / $fs) ;
+}
+

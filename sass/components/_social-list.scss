@@ -1,4 +1,91 @@
+@media screen and (max-width: 767px) {
 .social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--title-text-color);
+  transition: background-color var(--transition-dur-and-func);
+
+ &:hover,
+ &:focus {
+  background-color: var(--address-color);
+ }
+
+ &:hover .social-list-icon,
+ &:focus .social-list-icon {
+  fill: var(--title-text-color);
+  }
+ }
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-list-color);
+  transition: fill var(--transition-dur-and-func);
+
+.address-social-list-link:hover &,
+.address-social-list-link:focus & {
+  fill: var(--title-text-color);
+  }
+ }
+}
+
+@media screen and (min-width: 768px) {
+  .social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--title-text-color);
+  transition: background-color var(--transition-dur-and-func);
+
+ &:hover,
+ &:focus {
+  background-color: var(--address-color);
+ }
+
+ &:hover .social-list-icon,
+ &:focus .social-list-icon {
+  fill: var(--title-text-color);
+  }
+ }
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-list-color);
+  transition: fill var(--transition-dur-and-func);
+
+.address-social-list-link:hover &,
+.address-social-list-link:focus & {
+  fill: var(--title-text-color);
+  }
+ }
+}
+
+
+
+
+/*.social-list {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -22,5 +109,5 @@
  &:focus .social-list-icon {
   fill: var(--title-text-color);
  }
-}
+}*/
   

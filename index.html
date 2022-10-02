@@ -40,7 +40,7 @@
                 </svg>+38 096 111 11 11</a>
             </li> 
         </ul>
-        <button type="button" class="menu-button .js-open-menu">
+        <button type="button" class="menu-button js-open-menu">
             <svg width="40" height="40" aria-label="Мобільне меню">
                 <use class="menu-button__icon" href="./images/link/sprite.svg#icon-burger"></use>
             </svg>
@@ -48,9 +48,9 @@
         </div>
     </header>
 
-    <div class="mobile-menu-container .js-menu-container">
+    <div class="mobile-menu-container js-menu-container">
         <div class="container mobile-container">
-            <button class="mobile-menu-button .js-close-menu">
+            <button class="mobile-menu-button js-close-menu">
                  <svg aria-label="Закрите вікно" class="mobile-close-icon" width="18" heigh="18">
                     <use href="./images/link/sprite.svg#icon-close"></use>
                 </svg>
@@ -89,7 +89,7 @@
    
     <main>
         <!--HERO-->
-        <!--<section class="hero section">
+        <section class="hero section section-overlay">
             <div class="container section-hero-container">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
             <button class="button primary" type="button" data-modal-open>Замовити послуги</button>
@@ -104,6 +104,8 @@
                                 <use href="./images/link/sprite.svg#icon-antenna"></use>
                             </svg>
                         </div>
+                            <h3 class="section-list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                            <p class="section__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
                     <li class="image__container">
                         <div class="image__icon">
@@ -111,6 +113,8 @@
                                 <use href="./images/link/sprite.svg#icon-clock"></use>
                             </svg>
                         </div>
+                            <h3 class="section-list__title">ПУНКТУАЛЬНІСТЬ</h3>
+                            <p class="section__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
                     <li class="image__container">
                         <div class="image__icon">
@@ -118,6 +122,8 @@
                                 <use href="./images/link/sprite.svg#icon-diagram"></use>
                             </svg>
                        </div>
+                            <h3 class="section-list__title">ПЛАНУВАННЯ</h3>
+                            <p class="section__text">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
                     <li class="image__container">
                         <div class="image__icon">
@@ -125,63 +131,66 @@
                                 <use href="./images/link/sprite.svg#icon-astronaut"></use>
                             </svg>
                         </div>
+                            <h3 class="section-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                            <p class="section__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
                 </ul>
-
-            <ul class="section__list list">
-                <li class="text__container">
-                    <h3 class="section-list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p class="section__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-                </li>
-                <li class="text__container">
-                    <h3 class="section-list__title">ПУНКТУАЛЬНІСТЬ</h3>
-                    <p class="section__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                </li>
-                <li class="text__container">
-                    <h3 class="section-list__title">ПЛАНУВАННЯ</h3>
-                    <p class="section__text">Так само консультація з широким активом значною мірою зумовлює.</p>
-                </li>
-                <li class="text__container">
-                    <h3 class="section-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                    <p class="section__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-                </li>
-            </ul>-->
         </section>
 
         <!--Чим Ми Займаємося-->
-        <!--<section class="section-work section">
+        <section class="section-work section">
             <div class="container section-work-container">
             <h2 class="section-item">Чим ми займаємося</h2>
             <ul class="section-list-container">
-                <li class="image__container">
-                    <div class="list__applications-list">
+                <li class="image__container-picture">
+                    <picture>
+                        <source srcset="./images/N8/decstop/desktop-img.webp 1x, ./images/N8/decstop/desktop-img.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="./images/N8/decstop/desktop-img.jpg 1x, ./images/N8/decstop/desktop-img.jpg 2x" media="(min-width: 1200px)">
                         <img class="image__section" src="./images/work/WTF-1.jpg" alt="coding" width="370">
+                    </picture>
+                    <div class="list__applications-list">
                         <b class="text-applications__text">ДЕКСТОПНІ ДОДАТКИ</b>
                     </div>
                 </li>
-                <li class="image__container">
-                    <div class="list__applications-list">
+                <li class="image__container-picture">
+                    <picture>
+                        <source srcset="./images/N8/decstop/mobile-img.webp 1x, ./images/N8/decstop/mobile-img.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="./images/N8/decstop/mobile-img.jpg 1x, ./images/N8/decstop/mobile-img.jpg 2x" media="(min-width: 1200px)">
                         <img class="image__section" src="./images/work/WTF-2.jpg" alt="mobile design" width="370">
+                    </picture>
+                    <div class="list__applications-list">
                         <b class="text-applications__text">МОБІЛЬНІ ДОДАТКИ</b>
                     </div>
                 </li>
-                <li class="image__container">
-                    <div class="list__applications-list">
+                <li class="image__container-picture">
+                    <picture>
+                        <source srcset="./images/N8/decstop/design-img.webp 1x, ./images/N8/decstop/design-img.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                        <source srcset="./images/N8/decstop/design-img.jpg 1x, ./images/N8/decstop/design-img.jpg 2x" media="(min-width: 1200px)">
                         <img class="image__section" src="./images/work/WTF-3.jpg" alt="color design" width="370">
+                    </picture>
+                    <div class="list__applications-list">
                         <b class="text-applications__text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</b>
                     </div>
                 </li>
             </ul> 
-            </div>-->
+            </div>
         </section>
 
         <!--Наша Команда-->
-        <!--<section class="post-section section">
+        <section class="post-section section">
             <div class="container post-section-container">
             <h2 class="post">Наша команда</h2>
             <ul class="list-container">
                 <li class="user container-item">
-                    <img src="./images/hero/img-1.jpg" alt="Ігор Дем'яненко" width="270">
+                    <picture>
+                        <source srcset="./images/N8/decstop/comand-1.webp 1x, ./images/N8/decstop/comand-1.2.webp 2x" type="image/webp" media="(min-width:1200px)">
+                        <source srcset="./images/N8/decstop/comand-1.jpg 1x, ./images/N8/decstop/comand-1.2.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/N8/tablet/comand-tablet-1.webp 1x, ./images/N8/tablet/comand-tablet-1.2.webp 2x" type="image/webp" media="(min-width: 768px)">
+                        <source srcset="./images/N8/tablet/comand-tablet-1.jpg 1x, ./images/N8/tablet/comand-tablet-1.2.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/N8/mobile/comand-mobile-1.webp 1x, ./images/N8/mobile/comand-mobile-1.2.webp 2x" type="image/webp" media="(max-width: 767px)">
+                        <source srcset="./images/N8/mobile/comand-mobile-1.jpg 1x, ./images/N8/mobile/comand-mobile-1.2.jpg 2x" media="(max-width: 767px)">
+                        <img src="./images/hero/img-1.jpg" alt="Ігор Дем'яненко" width="270">
+                    </picture>
                     <h3 class="post-title">Ігор Дем'яненко</h3>
                     <p class="post-text">Product Designer</p>
                     <ul class="social-list list">
@@ -216,7 +225,15 @@
                     </ul>
                 </li>
                 <li class="user">
-                    <img src="./images/hero/img-2.jpg" alt="Ольга Рєпіна" width="270">
+                    <picture>
+                        <source srcset="./images/N8/decstop/comand-2.webp 1x, ./images/N8/decstop/comand-2.2.webp 2x" type="image/webp" media="(min-width:1200px)">
+                        <source srcset="./images/N8/decstop/comand-2.jpg 1x, ./images/N8/decstop/comand-2.2.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/N8/tablet/comand-tablet-2.webp 1x, ./images/N8/tablet/comand-tablet-2.2.webp 2x" type="image/webp" media="(min-width: 768px)">
+                        <source srcset="./images/N8/tablet/comand-tablet-2.jpg 1x, ./images/N8/tablet/comand-tablet-2.2.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/N8/mobile/comand-mobile-2.webp 1x, ./images/N8/mobile/comand-mobile-2.2.webp 2x" type="image/webp" media="(max-width: 767px)">
+                        <source srcset="./images/N8/mobile/comand-mobile-2.jpg 1x, ./images/N8/mobile/comand-mobile-2.2.jpg 2x" media="(max-width: 767px)">  
+                        <img src="./images/hero/img-2.jpg" alt="Ольга Рєпіна" width="270">
+                    </picture>
                     <h3 class="post-title">Ольга Рєпіна</h3>
                     <p class="post-text">Frontend Developer</p>
                     <ul class="social-list list">
@@ -251,7 +268,15 @@
                     </ul>
                 </li>
                 <li class="user">
-                    <img src="./images/hero/img-3.jpg" alt="Микола Тарасов" width="270">
+                    <picture>
+                        <source srcset="./images/N8/decstop/comand-3.webp 1x, ./images/N8/decstop/comand-3.3.webp 2x" type="image/webp" media="(min-width:1200px)">
+                        <source srcset="./images/N8/decstop/comand-3.jpg 1x, ./images/N8/decstop/comand-3.3.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/N8/tablet/comand-tablet-3.webp 1x, ./images/N8/tablet/comand-tablet-3.3.webp 2x" type="image/webp" media="(min-width: 768px)">
+                        <source srcset="./images/N8/tablet/comand-tablet-3.jpg 1x, ./images/N8/tablet/comand-tablet-3.3.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/N8/mobile/comand-mobile-3.webp 1x, ./images/N8/mobile/comand-mobile-3.3.webp 2x" type="image/webp" media="(max-width: 767px)">
+                        <source srcset="./images/N8/mobile/comand-mobile-3.jpg 1x, ./images/N8/mobile/comand-mobile-3.3.jpg 2x" media="(max-width: 767px)">  
+                        <img src="./images/hero/img-3.jpg" alt="Микола Тарасов" width="270">
+                    </picture>
                     <h3 class="post-title">Микола Тарасов</h3>
                     <p class="post-text">Marketing</p>
                     <ul class="social-list list">
@@ -286,7 +311,15 @@
                     </ul>
                 </li>
                 <li class="user">
-                    <img src="./images/hero/img-4.jpg" alt="Михайло Єрмаков" width="270">
+                    <picture>
+                     <source srcset="./images/N8/decstop/comand-4.webp 1x, ./images/N8/decstop/comand-4.4.webp 2x" type="image/webp" media="(min-width:1200px)">
+                        <source srcset="./images/N8/decstop/comand-4.jpg 1x, ./images/N8/decstop/comand-4.4.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/N8/tablet/comand-tablet-4.webp 1x, ./images/N8/tablet/comand-tablet-4.4.webp 2x" type="image/webp" media="(min-width: 768px)">
+                        <source srcset="./images/N8/tablet/comand-tablet-4.jpg 1x, ./images/N8/tablet/comand-tablet-4.4.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/N8/mobile/comand-mobile-4.webp 1x, ./images/N8/mobile/comand-mobile-4.4.webp 2x" type="image/webp" media="(max-width: 767px)">
+                        <source srcset="./images/N8/mobile/comand-mobile-4.jpg 1x, ./images/N8/mobile/comand-mobile-4.4.jpg 2x" media="(max-width: 767px)">  
+                        <img src="./images/hero/img-4.jpg" alt="Михайло Єрмаков" width="270">
+                    </picture>    
                     <h3 class="post-title">Михайло Єрмаков</h3>
                     <p class="post-text">UI Designer</p>
                     <ul class="social-list list">
@@ -321,11 +354,11 @@
                     </ul>
                 </li>
             </ul>
-        </div>-->
+        </div>
         </section>
 
         <!--Постійні Клієнти-->
-        <!--<section class="clients section">
+        <section class="clients section">
             <div class="container client-section-container">
                 <h2 class="clients-section">Постійні клієнти</h2>
                     <ul class="clients__container list">
@@ -358,7 +391,7 @@
                             </a>
                         </li>
                         <li class="clients__list">
-                            <a href="" class="clients-icon">
+                            <a href="" class="clients__icon">
                                 <svg aria-label="brand icon" class="image__clients">
                                     <use href="./images/link/sprite.svg#icon-brand"></use>
                                 </svg>
@@ -372,11 +405,11 @@
                             </a>
                         </li>
                     </ul>
-            </div>-->
+            </div>
         </section>        
     </main>
     
-    <!--<footer class="address">
+    <footer class="address">
         <div class="container address-menu">
             <div class="address-container">
             <a class="address-logo" href="./index.html">
@@ -391,7 +424,7 @@
             </ul>
         </address>
         </div>
-            <div class="address-social-container">
+            <!--<div class="address-social-container">
                 <div class="address-link">ПРИЄДНУЙТЕСЬ</div>
                 <ul class="address-social-list list">
                     <li class="address-social-list-item">
@@ -423,8 +456,8 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-            <form class="form">
+            </div>-->
+            <!--<form class="form">
                 <label class="form-label"></label>
                 <p class="form-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
                 <div class="form-container">
