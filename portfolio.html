@@ -54,7 +54,7 @@
                     <use href="./images/link/sprite.svg#icon-close"></use>
                 </svg>
             </button>
-            <ul class="mobile-menu list">
+            <ul class="mobile-menu__list">
                 <li class="mobile-menu__item"><a class="mobile-menu__link link" href="studio">Студія</a></li>
                 <li class="mobile-menu__item"><a class="mobile-menu__link item current" href="./portfolio.html">Портфоліо</a></li>
                 <li class="mobile-menu__item"><a class="mobile-menu__link link" href="contacts">Контакти</a></li>
@@ -272,7 +272,7 @@
             </ul>
         </address>
         </div>
-        <div class="address-container">
+        <div class="address-social-container">
             <div class="address-link">ПРИЄДНУЙТЕСЬ</div>
             <ul class="address-social-list list">
                 <li class="address-social-list-item">
@@ -305,27 +305,26 @@
                 </li>
             </ul>
         </div>
-        <form class="form">
-            <label class="form-label"></label>
+        <div class="form">
             <p class="form-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
-            <div class="form-container">
-                <div class="form-input">
-                    <input type="text" class="form-input-link" name="email" required
-                    pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
-                    title="xxx-xxx-xx-xx"
-                    name="user_name"
-                    placeholder="E-mail" class="form-input-link-container" type="email">
-                </div>
-                <div class="form-icon-container">
-                    <button class="form-icon-btn" type="button">Підписатися
-                    <svg class="form-icon">
-                        <use href="./images/link/sprite.svg#icon-telegram"></use>
-                    </svg>
-                    </button>
-                </div>
-            </div>
-        </form> 
-    </div>
+                <form class="form-list"> 
+                 <label class="form-label">
+                    <div class="form-input">
+                        <input type="text" class="form-input-link" name="email" required
+                        pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+                        title="xxx-xxx-xx-xx"
+                        name="user_name"
+                        placeholder="E-mail" class="form-input-link-container" type="email">
+                    </div>
+                 </label>
+                    <div class="form-icon-container">
+                        <button class="form-icon-btn" type="button">Підписатися
+                        <svg class="form-icon">
+                            <use href="./images/link/sprite.svg#icon-telegram"></use>
+                        </svg>
+                        </button>
+                    </div>
+         </div>
     </footer>
 
      <script src="./js/menu.js"></script>

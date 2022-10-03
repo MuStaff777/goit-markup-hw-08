@@ -160,7 +160,6 @@
   
   .section-list__title {
     @include font (14px, 700, 16px);
-    text-align: center;
     font-family: var(--primary-font);
     letter-spacing: 0.03em;
     margin-bottom: 10px;

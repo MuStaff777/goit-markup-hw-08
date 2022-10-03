@@ -91,8 +91,8 @@
         
 .page-header__container {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     border-bottom: 1px solid var(--border-color);
 }  
     
@@ -105,7 +105,7 @@
 .menu {
   display: flex;
   column-gap: 50px;
-  margin-left: 50px;
+  margin-left: 93px;
 }
     
 .page-navigation__logo {
@@ -169,7 +169,6 @@
 
 .menu-site {
   margin-left: auto;
-  margin-right: 30px;
 }
 
 .menu-site {
@@ -235,21 +234,14 @@
     letter-spacing: 0.03em;
     color: var(--secondary-title-color);
   }
-  
-  .page-header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
-
-.page-navigation__logo {
-  margin-right: 93px;
-}
 
 .page-header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  }
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 
   .contacts {
     flex-direction: row;

@@ -66,17 +66,12 @@
   flex-wrap: wrap;
   gap: 30px;
   }
-  
-.clients__list {
-  max-width: 210px;
-  height: 92px;
-}
 
 .clients__icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 226px;
   height: 92px;
   border: 1px solid var(--social-list-color);
   border-radius: 4px;
@@ -114,10 +109,15 @@
 }
 
 .clients-section {
+  @include font (36px, 700, 42px);
+  font-family: var(--primary-font);
+  letter-spacing: 0.03em;
+  text-align: Center;
   margin-bottom: 50px;
-}
+  color: var(--text-color);
+  }
 
-.image__clients {
+  .image__clients {
   width: 106px;
   height: 60px;
   fill: var(--social-list-color);

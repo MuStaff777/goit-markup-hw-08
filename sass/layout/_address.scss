@@ -60,7 +60,6 @@
   font-family: var(--primary-font);
   font-style: normal;
   letter-spacing: 0.03em;
-  margin-top: 9px;
   color: var(--mail-links-color);
 }
 
@@ -198,7 +197,6 @@
   font-family: var(--primary-font);
   font-style: normal;
   letter-spacing: 0.03em;
-  margin-top: 9px;
   color: var(--mail-links-color);
 }
 
@@ -219,7 +217,7 @@
 }
 
 .address-link {
-  @include font (14px, 16px);
+  @include font (14px, 700, 16px);
   font-family: var(--primary-font);
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -269,6 +267,7 @@
  }
 }
 
+
 @media screen and (min-width: 1200px) {
   .address-logo {
   text-decoration: none;
@@ -284,9 +283,20 @@
   list-style: none;
 }
 
-.address-item {
-  color: var(--title-text-color);
+.address-logo {
+  @include font (26px, 700, 31px);
+  font-family: var(--secondary-font);
+  letter-spacing: 0.03em;
+  color: var(--address-color);
 }
+    
+.address-item {
+  @include font (26px, 700, 31px);
+    font-family: var(--secondary-font);
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
 
 .contact-links {
   color: var(--title-text-color);
@@ -300,6 +310,7 @@
 
 .address-menu {
   display: flex;
+  justify-content: inherit;
   align-items: baseline;
   text-align: start;
 }
@@ -313,17 +324,12 @@
   color: var(--title-text-color);
 }
 
-.address-container {
-  margin-right: 70px;
-}
-
 .address-mail,
 .address-phone {
   @include font (14px, 400, 24px);
   font-family: var(--primary-font);
   font-style: normal;
   letter-spacing: 0.03em;
-  margin-top: 9px;
   color: var(--mail-links-color);
 }
 
@@ -349,6 +355,10 @@
   font-family: var(--primary-font);
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+
+.address-social-container {
+  margin-left: 70px;
 }
 
 .address-social-list {
