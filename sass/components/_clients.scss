@@ -1,3 +1,28 @@
+@media screen and (max-width: 479px) {
+  .mobile-menu__link.item {
+    font-size: 8.3vw;
+  }
+
+  .mobile-menu__link.link {
+    font-size: 8.3vw;
+  }
+
+  .mobile-contact-phone-number {
+    font-size: 7.1vw;
+  }
+
+  .mobile-menu-site {
+    font-size: 5vw;
+  }
+
+  .mobile-social-link {
+    font-size: 3.75vw;
+  }
+}
+
+
+
+
 @media screen and (max-width: 767px) {
 .clients {
   padding-top: 60px;
@@ -7,6 +32,7 @@
 
 .clients__container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
